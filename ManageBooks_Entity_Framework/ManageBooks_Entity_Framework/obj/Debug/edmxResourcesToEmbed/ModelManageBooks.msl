@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BooksManagementModelStoreContainer" CdmEntityContainer="BooksManagementEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="BooksManagementModel.Books">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="idBook" ColumnName="idBook" />
+          <ScalarProperty Name="nameCategory" ColumnName="nameCategory" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="datePublication" ColumnName="datePublication" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="coverImage" ColumnName="coverImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Borrow">
+      <EntityTypeMapping TypeName="BooksManagementModel.Borrow">
+        <MappingFragment StoreEntitySet="Borrow">
+          <ScalarProperty Name="idBorrow" ColumnName="idBorrow" />
+          <ScalarProperty Name="nameStudent" ColumnName="nameStudent" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="dateBorrowStart" ColumnName="dateBorrowStart" />
+          <ScalarProperty Name="dateBorrowEnd" ColumnName="dateBorrowEnd" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="BooksManagementModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+          <ScalarProperty Name="nameCategory" ColumnName="nameCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sell">
+      <EntityTypeMapping TypeName="BooksManagementModel.Sell">
+        <MappingFragment StoreEntitySet="Sell">
+          <ScalarProperty Name="idSell" ColumnName="idSell" />
+          <ScalarProperty Name="nameStudent" ColumnName="nameStudent" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="dateBook" ColumnName="dateBook" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="BooksManagementModel.Students">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="idStudent" ColumnName="idStudent" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="school" ColumnName="school" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="coverImage" ColumnName="coverImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BooksManagementModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="passwordUser" ColumnName="passwordUser" />
+          <ScalarProperty Name="roleUser" ColumnName="roleUser" />
+          <ScalarProperty Name="isAuth" ColumnName="isAuth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
